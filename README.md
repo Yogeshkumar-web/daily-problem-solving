@@ -1,1 +1,1 @@
-# My DSA journey
+# My JavaScript & DSA journey

@@ -106,3 +106,5 @@ let sayHello = function () {
 // | Execution before def | ✅ Allowed                    | ❌ Not allowed               |
 // | Error type           | None                         | ❌ `TypeError` or `RefError` |
 // | Recommended when     | Reusable top-level functions | Dynamic/callback functions  |
+
+// ---------------------------------------------------------------

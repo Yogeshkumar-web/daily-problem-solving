@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closure</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+      }
+
+      .container {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 30px;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2.5em;
+      }
+
+      .input-group {
+        margin-bottom: 15px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        background: rgba(255, 255, 255, 0.9);
+        color: #333;
+      }
+
+      button {
+        background: #ff6b6b;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 5px;
+        transition: all 0.3s ease;
+      }
+
+      button:hover {
+        background: #ff5252;
+        transform: translateY(-2px);
+      }
+
+      .output {
+        margin-top: 20px;
+        padding: 15px;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        min-height: 100px;
+      }
+
+      .password-item {
+        background: rgba(255, 255, 255, 0.1);
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 5px;
+        border-left: 4px solid #ff6b6b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🔐 Password Manager</h1>
+      <p style="text-align: center; margin-bottom: 30px">
+        <strong>Closure Practice Project</strong><br />
+        Securely store aur retrieve passwords using JavaScript Closures!
+      </p>
+
+      <div class="input-group">
+        <label for="website">Website Name:</label>
+        <input
+          type="text"
+          id="website"
+          placeholder="जैसे: Gmail, Facebook, etc."
+        />
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Your secret password"
+        />
+      </div>
+
+      <button onclick="addPassword()">Add Password</button>
+      <button onclick="getPassword()">Get Password</button>
+      <button onclick="getAllWebsites()">Show All Websites</button>
+      <button onclick="clearAll()">Clear All</button>
+
+      <div class="output" id="output">
+        <p><strong>Welcome!</strong> Add your first password above.</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

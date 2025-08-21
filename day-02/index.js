@@ -16,6 +16,11 @@ function sayHelloWithCallback(callbackFn, name) {
 }
 
 sayHelloWithCallback(greet, "yogesh");
+/*
+
+
+
+*/
 
 // b. Function as a Return Value: ek fn dusre fn ko return karta hai. Ye concept "closure" ke saath closely related hai, ye useful hota hai jab aapko dynamic functions create karne hote hai.
 

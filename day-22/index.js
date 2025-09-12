@@ -1,0 +1,11 @@
+Array.prototype.last = function () {
+  if (this.length === 0) {
+    return -1;
+  }
+
+  return this[this.length - 1];
+};
+
+console.log([1, 2, 3].last());
+console.log([].last());
+console.log(["a", "b"].last());

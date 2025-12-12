@@ -13,6 +13,21 @@ The input will be generated such that the operation is always possible.
 It can be shown that the resulting string will always be unique.
 */
 
+function removeStars(s) {
+    const stack = []; // use array as stack
+
+    for (let ch of s) {
+        if (ch === "*") {
+            // guaranteed there's at least one non-star to remove
+            stack.pop();
+        } else {
+            stack.push(ch);
+        }
+    }
+
+    return stack.join("");
+}
+
 function removeStarsInPlace(s) {
     const arr = s.split("");
     let write = 0; // next write position
